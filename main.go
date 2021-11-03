@@ -72,6 +72,7 @@ func main() {
     }
 
 	var _, res = Bisection(*lower, *upper, *acc, cfs)
-	fmt.Sprintf("%f", res)
+	sres := fmt.Sprintf("%f", res)
+	fmt.Print(res)
 	
 }
