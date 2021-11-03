@@ -72,7 +72,8 @@ func main() {
     }
 
 	var _, res = Bisection(*lower, *upper, *acc, cfs)
-	fmt.Print(res)
-
+	if s, err := strconv.ParseFloat(res, 64); err == nil {
+    	    fmt.Println(s)
+	}
 	
 }
